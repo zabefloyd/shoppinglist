@@ -1,10 +1,12 @@
 
 function addListItem(){
 var text = $("#new-text").val();
+	if (document.getElementById("new-text").value.length === 0){
+		alert("some text");
+	}
 	
 $( "#todo" ).append('<li>'+text+' <button class="delete"> Delete </button></li> ');
-$("#new-text").val("").valid();
-$("#new-text").valid();
+$("#new-text").val("");
 }
 
 function deleteListItem(){
@@ -21,18 +23,3 @@ $(document).on("click", ".delete", deleteListItem);
 });
 
 
-$(document).ready(function() {
-    $("#form1").validate({
-        rules: {
-            field1: "required"
-        },
-        messages: {
-            field1: "Please specify your name"
-
-        }
-    })
-
-    $('#btn').click(function() {
-        $("#form1").valid();
-    });
-});
