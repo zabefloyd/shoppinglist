@@ -1,17 +1,21 @@
 body{
-	color: white;
-	background-size: cover;
-	opacity: 30%;
+	
+	/*background-size: cover;
+	opacity: 30%;*/
+       background-color: rgba(1, 3, 21, 0.9);
 
-	background-repeat: no-repeat;
-	background-image: url("Fruit_Stall_in_Barcelona_Market.jpg");
+	/*background-repeat: no-repeat;*/
+	/*background-image: url("Fruit_Stall_in_Barcelona_Market.jpg");*/
 }
 
-body img {
+/*body img {
 	 opacity: 0.4;
     filter: alpha(opacity=40);
+}*/
+.error {
+    color: yellow;
+    padding: 0 10px;
 }
-
 #delete {
 	background: red;
 	floa

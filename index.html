@@ -3,13 +3,22 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Shopping List</title>
-	<link rel="stylesheet" type="text/css" href="test.css">
+	
+
+<!--include jQuery -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+ 
+<!--include jQuery Validation Plugin-->
+
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/normalize.css">
 <!-- 	<link href="css/font-awesome.min.css" rel="stylesheet"> -->
 	<script src="//code.jquery.com/jquery.min.js"></script>
 	<script type="text/javascript" src="//code.jquery.com/ui/1.9.1/jquery-ui.js"></script>
 	<script type="text/javascript" src="test.js"></script>
+
+<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.js"></script>
+<link rel="stylesheet" type="text/css" href="test.css">
 </head>
 <body>
 
@@ -19,14 +28,22 @@
         margin: 68px 57px;
 ">
 	<h1 class="test">Shopping list</h1>
-		
-	<input type="text"  id="new-text" name="" >
-				<button id="add">    Add</button>
+		<form id="form1" name="form1">
+	<input type="text"  id="new-text" id="field1" class="required"></form>
+	
+				<button id="btn" type="button">    Add</button>
+
 				    <ul id="todo" style="
     margin: 13px 73px;
 ">
 
 	</ul>
+	
 </div></div>
+<script>
+	
+
+</script>
 </body>
 </html>
+
