@@ -51,9 +51,9 @@ body{
     display: none;
     z-index: 99999;
 }
-li button{
+li button, #removeall{
 	    position: relative;
-	        float: right;
+	float: right;
     background: rgba(6, 115, 10, 0.64);
     padding: 1px 14px;
     font-size: 16px !important;
@@ -74,7 +74,7 @@ li {
     border-radius: 4px;
     border-bottom: 1px solid white;
     list-style: none;
-    margin: 1px -242px;
+       margin: 7px -302px;
        -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     box-shadow: 1px 3px 1px -1px rgba(0,0,0,0.5);
@@ -90,13 +90,14 @@ h1 {
 	color: white !important;
 }
 
- button {
- 	    position: absolute;
+
+
+ button, #removeall{
+    position: absolute;
     height: 27px;
     float: right;
     font-weight: 800 !important;
     color: white !important;
- 
     background: rgba(6, 115, 10, 0.64);
     padding: 1px 14px;
     font-size: 16px !important;
@@ -106,4 +107,9 @@ h1 {
     -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     box-shadow: 5px 4px 1px -4px rgba(0,0,0,0.5);
 	 
+}
+
+#removeall {
+    background: rgb(64, 14, 14);
+           margin: 0 99px;
 }
