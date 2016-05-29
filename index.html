@@ -4,23 +4,24 @@
 	<meta charset="UTF-8">
 	<title>Shopping List</title>
 
-	
+	  <link href="bower_components/sweetalert/dist/sweetalert.css" rel="stylesheet">
+
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="test.css">
 <!-- 	<link href="css/font-awesome.min.css" rel="stylesheet"> -->
 
-  <link href="bower_components/sweetalert/dist/sweetalert.css" rel="stylesheet">
 </head>
 <body>
 
    <div class="containter">
    <div class="col-sm-6" style="
+
     float: right;
         margin: 68px 57px;
 ">
 	<h1 class="test">Shopping list</h1>
-		
+		<div id="field-req" style="display:none; color: white;">OPS! You didn't add anything</div>
 	<input type="text" id="new-text" name="" >
 	<button id="add">Add</button>
 	<ul id="todo" style="
