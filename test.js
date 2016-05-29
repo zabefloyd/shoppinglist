@@ -8,11 +8,9 @@ var text = $("#new-text").val();
 		else{
 			document.getElementById("field-req").style.display = "none";
 	}
-	
 $( "#todo" ).append('<li>'+text+' <button class="delete"> Delete </button></li> ');
 $("#new-text").val("");
 }
-
 function deleteListItem(){
  $(this).parent().remove()
 }
@@ -22,13 +20,12 @@ $("#add").on("click", addListItem);
 
 $(".delete").on("click",  deleteListItem);
 $(document).on("click", ".delete", deleteListItem);
-
-$(".sweet-overlay").click(function(){
-
- $(".swal").hide();
-   event.preventDefault();
+$(document).on('keypress', function (key) {
+    //keyCode == 13 is the ENTER key
+    if (key.keyCode == 13) {
+        addListItem();
+    }
 });
-
 });
 
 
